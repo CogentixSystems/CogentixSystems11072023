@@ -44,11 +44,38 @@
 
     <title>||Cogentix System||</title>
     <style>
+
+      #more1 {display: none;}
+      #more {display: none;}
+      
+
       .nav-link {
         color: #333333 !important;
         border-bottom: 3px solid transparent;
       }
     </style>
+
+
+
+    <script>
+      function showOrHideElements(spanAzure,Azuremore,btnAzure) {
+        var dots = document.getElementById(spanAzure);
+        var moreText = document.getElementById(Azuremore);
+        var btnText = document.getElementById(btnAzure);
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+
+
   </head>
   
   <body>
@@ -169,36 +196,84 @@
                              </div>
                           </div>
                       <br><br>
-                       <div class="row">
-                          <div class="col-sm-12">
-                             <div class="card shadow mb-3">
-                              <div class="card-body">
-                                <pre><h2 class="header-style">Award from Navbhu Care Foundation</h2></pre>
-                                <span></span>
-                                <p> Leveraging data enables you to understand your customers better so you can implement strategies 
-                        that allow you to engage with them at the top and middle of the funnel and promote loyalty once they become customers: 
-                        Gain insights that help you understand customer sentiment.Leveraging data analytics allows focusing only on those strategies which have 
-                        reliable outcomes and desired impact. It allows for launching customer-oriented marketing campaigns increasing overall strategy efficiency 
-                        and reducing costs for persuading your customers.</p>
-                             </div>
+
+
+
+
+
+                      <div class="row">
+                        <div class="col-sm-12 p-0">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div class="overlay-text1">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                          
+                                          
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 m-auto pt-4">
+                                            <div class="row">
+
+
+                                              <div class="col-lg-6 col-sm-12">
+                                                <div class="boxes">
+                                                    <img style="height: 50% ; width: 50% ;" src="images/Azure.jpeg" alt="">
+                                                    <h4>Azure Certification</h4>
+                                                    <p>Leveraging data enables you to understand your customers better so you can implement strategies 
+                                                      that allow you to engage with them at the top and middle of the funnel and promote loyalty once they become customers:
+                                                      
+                                                      
+                                                      <span id="spanAzure">...</span><span id="Azuremore" style="display:none">
+                                                      Gain insights that help you understand customer sentiment.Leveraging data analytics allows focusing only on those strategies which have 
+                                                      reliable outcomes and desired impact. It allows for launching customer-oriented marketing campaigns increasing overall strategy efficiency 
+                                                      and reducing costs for persuading your customers.</span>​</p>
+
+                                                      <button onclick="showOrHideElements('spanAzure','Azuremore','btnAzure')" id="btnAzure" style="color:#42b635;">Read more...</button>
+
+
+                                                </div>
+                                            </div>
+
+                                               
+                                              <div class="col-lg-6 col-sm-12">
+                                                    <div class="boxes">
+
+                                                        <img style="height: 50% ; width: 50% ;" src="images/Navbhucare.jpeg" alt="">
+
+                                                        <h4>Award from Navbhu Care Foundation</h4>
+                                                        <p>Leveraging data enables you to understand your customers better so you can implement strategies 
+                                                          that allow you to engage with them at the top and middle of the funnel and promote loyalty once they become customers:
+                                                          
+                                                          
+                                                          <span id="spanNavbhu">...</span><span id="Navbhumore" style="display:none"> 
+                                                          Gain insights that help you understand customer sentiment.Leveraging data analytics allows focusing only on those strategies which have 
+                                                          reliable outcomes and desired impact. It allows for launching customer-oriented marketing campaigns increasing overall strategy efficiency 
+                                                          and reducing costs for persuading your customers.</span>​</p>
+
+                                                          <button  onclick="showOrHideElements('spanNavbhu','Navbhumore','btnNavbhu')" id="btnNavbhu" style="color:#42b635;">Read more</button>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                       </div>
-                    <div class="row">
-                          <div class="col-sm-12">
-                            <div class="card shadow mb-3">
-                              <div class="card-body">
-                                <pre><h2 class="header-style">Azure Certification</h2></pre>
-                                <span></span>
-                                <p> Leveraging data enables you to understand your customers better so you can implement strategies 
-                        that allow you to engage with them at the top and middle of the funnel and promote loyalty once they become customers: 
-                        Gain insights that help you understand customer sentiment.Leveraging data analytics allows focusing only on those strategies which have 
-                        reliable outcomes and desired impact. It allows for launching customer-oriented marketing campaigns increasing overall strategy efficiency 
-                        and reducing costs for persuading your customers.</p>
-                             </div>
-                          </div>
-                          </div>
-                       </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+                      
                </div> 
                </div>
             
